@@ -12,15 +12,16 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
-    "hardhat": "^2.26.0"
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^5.4.0",
     "@rainbow-me/rainbowkit": "^2.2.8",
+    "@stacks/connect": "^8.2.0",
+    "@stacks/connect-react": "^23.1.0",
+    "@stacks/network": "^7.2.0",
+    "@stacks/transactions": "^7.2.0",
     "@wagmi/core": "^2.18.0",
     "dotenv": "^17.2.0",
-    "ethers": "^6.15.0",
     "viem": "^2.32.1",
     "wagmi": "^2.16.0"
   }

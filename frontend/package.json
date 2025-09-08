@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "stacks-sip-frontend",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "@rainbow-me/rainbowkit": "^2.2.8",
-    "@wagmi/core": "^2.18.0",
+    "@stacks/connect": "^7.4.0",
+    "@stacks/network": "^6.5.4",
+    "@stacks/transactions": "^6.5.4",
     "ethers": "^6.15.0",
-    "next": "15.4.2",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "viem": "^1.x.x",
+    "next": "^13.5.11",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "viem": "^2.37.4",
     "wagmi": "^2.16.0"
   },
   "devDependencies": {

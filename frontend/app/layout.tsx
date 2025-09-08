@@ -1,16 +1,30 @@
 import "./globals.css";
-import Providers from "./providers";
+import { Connect } from '@stacks/connect-react';
+import { userSession } from '../utils/auth';
 
 export const metadata = {
-  title: "OnchainSIP",
-  description: "Decentralized Systematic Investment Plans on Avalanche Fuji Testnet",
+  title: "StacksSIP",
+  description: "Decentralized Systematic Investment Plans on Stacks Testnet",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className="bg-black text-white min-h-screen">
-        <Providers>{children}</Providers>
+        <Connect
+          authOptions={{
+            appDetails: {
+              name: 'StacksSIP',
+              icon: '/icon.png',
+            },
+            userSession,
+            onFinish: () => {
+              window.location.reload();
+            },
+          }}
+        >
+          {children}
+        </Connect>
       </body>
     </html>
   );

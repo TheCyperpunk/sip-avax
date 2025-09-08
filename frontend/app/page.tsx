@@ -5,6 +5,8 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAccount, useChainId } from "wagmi";
 import { useSIPContract, formatSIPData, generatePoolName, getTotalPortfolioValue, getTotalExecutedAmount } from "../hooks/useSIPContract";
 import styles from "./page.module.css";
+import SIPForm from '../components/SIPForm';
+
 // Removed: import ErrorBoundary from '../components/ErrorBoundary';
 // Removed: import TokenPrices from '../components/TokenPrices';
 
